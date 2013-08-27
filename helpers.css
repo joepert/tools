@@ -1065,3 +1065,35 @@ body { margin: 0px; padding: 0px; }
 	color: #fff;
 }
 .bl-stickyfooter sup { font-size: 11px; }
+
+
+/* bl-center-element */
+.bl-center-element {
+	width: 100%;
+	height: 300px;
+}
+.bl-center-element .element {
+	float: left;
+	border: solid 1px;
+	border-color: #DDDCDC #E3E2E2;
+	margin: 10px 10px 0 0;
+	border-radius: 10px;
+	background: #F5F5F5;
+}
+.bl-center-element a {
+	display: table-cell;
+	width: 400px;
+	height: 400px;
+	text-align: center;
+	vertical-align: middle;
+}
+.bl-center-element img { border: none; vertical-align: middle; }
+.bl-center-element div { border-collapse: collapse; /* Op7 */ }
+.bl-center-element a:hover { background: #B943AC; }
+
+.ie8 .bl-center-element a,
+.ie7 .bl-center-element a { display: block; }
+.ie8 .bl-center-element span,
+.ie7 .bl-center-element span { display: inline-block; vertical-align: middle; height: 100%; }
+.ie8 .bl-center-element,
+.ie7 .bl-center-element { _height: 0; zoom: 1; }
