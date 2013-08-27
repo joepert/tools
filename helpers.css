@@ -1,3 +1,7 @@
+/*
+	v1.0 27.08.23 Joep Wong 
+ */
+
 body {
 	background: #ffffff;
 }
@@ -1039,3 +1043,25 @@ html, body { height: 100%; }
 	background: red;
 	font-family: 'Verdana';
 }
+
+/* stickyfooter - bl-stack bl-footer */
+html, body { height: 100%; }
+body { margin: 0px; padding: 0px; }
+.bl-stack {
+	height:auto !important;
+	margin:0 0 -50px;
+	min-height:100%;
+}
+.bl-stack .bl-stack-inner { padding: 0 0 50px; }
+.bl-stack,
+.bl-stack .bl-stack-inner,
+.bl-stickyfooter,
+.bl-stickyfooter .bl-stickyfooter-inner { width: 100%; }
+.bl-stickyfooter .bl-stickyfooter-inner { height: 50px; }
+.bl-stickyfooter {
+	background: #B943AC;
+	font-size: 2em;
+	text-align: center;
+	color: #fff;
+}
+.bl-stickyfooter sup { font-size: 11px; }
