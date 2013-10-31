@@ -1,5 +1,4 @@
-/* v1.2 19.06.13 Joep Wong 
-adjusted for someone :) */
+/* v1.3 31.10.13 Joep Wong */
 
 /* clearfix */
 .pb-clearfix:after {
@@ -15,28 +14,6 @@ adjusted for someone :) */
 }
 *:first-child+html body .pb-clearfix {
 	zoom:1;
-}
-
-/* borders */
-.pb-b {
-	border:none;
-	border:0;
-}
-.pb-bt {
-	border-top:none;
-	border-top:0;
-}
-.pb-br {
-	border-right:none;
-	border-right:0;
-}
-.pb-bb {
-	border-bottom:none;
-	border-bottom:0;
-}
-.pb-bl {
-	border-left:none;
-	border-left:0;
 }
 
 /* line-height */
@@ -105,8 +82,30 @@ adjusted for someone :) */
 .pb-cursor {
 	cursor:default;
 }
+.pb-cursorauto {
+	cursor:auto;
+}
+.pb-cursormove {
+	cursor:move;
+}
+.pb-cursortext {
+	cursor:text;
+}
+.pb-cursorprogress {
+	cursor:progress;
+}
+.pb-cursorwait {
+	cursor:wait;
+}
 .pb-pointer {
 	cursor:pointer;
+}
+
+/* hr */
+.pb-hr {
+	border-width:1px 0 0 0;
+	border-style:solid;
+	border-color:#cccccc;
 }
 
 /* outline */
@@ -173,18 +172,11 @@ adjusted for someone :) */
 	clear:both;
 }
 
-/* hr */
-.pb-hr {
-	border-width:1px 0 0 0;
-	border-style:solid;
-	border-color:#cccccc;
-}
-
 /* width */
 .pb-wauto {
 	width:auto;
 }
-.pb-w100p {
+.pb-w100 {
 	width:100%;
 }
 
@@ -192,16 +184,16 @@ adjusted for someone :) */
 .pb-hauto {
 	height:auto;
 }
-.pb-h100p {
+.pb-h100 {
 	height:100%;
 }
 
 /* min-height */
-.pb-mh {
-	min-height:0;
-}
-.pb-mh100p {
+.pb-min100 {
 	min-height: 100%;
+}
+.pb-max100 {
+	max-height: 100%;
 }
 
 /* position & overflow */
@@ -223,33 +215,13 @@ adjusted for someone :) */
 .pb-ofxauto {
 	overflow-x:auto;
 }
-.pb-pos {
+.pb-position {
 	top:0px;
 	right:0px;
 	bottom:0px;
 	left:0px;
 }
-.pb-postb {
-	top:0;
-	bottom:0;
-}
-.pb-poslr {
-	left:0;
-	right:0;
-}
-.pb-post {
-	top:0px;
-}
-.pb-posr {
-	right:0px;
-}
-.pb-posb {
-	bottom:0px;
-}
-.pb-posl {
-	left:0px;
-}
-.pb-pos-auto {
+.pb-positionauto {
 	top:auto;
 	right:auto;
 	bottom:auto;
@@ -607,6 +579,8 @@ adjusted for someone :) */
 .pb-pl20 {
 	padding-left:20px;
 }
+
+/* 12 grid */
 .pb-row {
 	overflow:hidden;
 }
