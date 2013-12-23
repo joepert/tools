@@ -1,0 +1,311 @@
+$null: 0;
+$none: none;
+$zoom: $null;
+$v100p: 100%;
+$auto: auto;
+$posTop: top;
+$posRight: right;
+$posBottom: bottom;
+$posLeft: left;
+$hrColor: #ccc;
+
+$fontStateNormal: normal;
+
+.pb-clear:after {
+	visibility: hidden;
+	display: block!important;
+	font-size: 0;
+	content: "";
+	clear: both;
+	height: 0
+}
+* html body .pb-clear{
+	zoom: $zoom;
+}
+*:first-child+html body .pb-clear {
+	zoom: $zoom;
+}
+
+.pb-b {
+	border: $null;
+}
+.pb-bt {
+	border-top: $null;
+}
+.pb-br {
+	border-right: $null;
+}
+.pb-bb{
+	border-bottom: $null;
+}
+.pb-bl {
+	border-left: $null;
+}
+.pb-lh {
+	line-height: $fontStateNormal;
+}
+.pb-indent {
+	text-indent: $null;
+}
+.pb-bold {
+	font-weight: bold
+}
+.pb-normal {
+	font-weight: $fontStateNormal;
+}
+.pb-italic {
+	font-style: italic
+}
+.pb-uppercase {
+	text-transform: uppercase
+}
+.pb-lowercase {
+	text-transform: lowercase
+}
+.pb-capitalize {
+	text-transform: capitalize
+}
+.pb-decoration {
+	text-decoration: $none;
+}
+.pb-underline {
+	text-decoration: underline
+}
+.pb-alignl {
+	text-align: $posLeft;
+}
+.pb-alignc {
+	text-align: center
+}
+.pb-alignr {
+	text-align: $posRight;
+}
+.pb-valignt {
+	vertical-align: $posTop;
+}
+.pb-valignm {
+	vertical-align: middle
+}
+.pb-valigntb {
+	vertical-align:text-bottom
+}
+.pb-cursor {
+	cursor: default
+}
+.pb-pointer {
+	cursor: pointer
+}
+.pb-outline {
+	outline: $null;
+}
+.pb-letter-space {
+	letter-spacing: $null;
+}
+.pb-noselect {
+	-webkit-user-select: $none;
+	-khtml-user-select: $none;
+	-moz-user-select: $none;
+	-o-user-select: $none;
+	user-select: $none;
+}
+.pb-block {
+	display: block
+}
+.pb-inline {
+	display: inline
+}
+.pb-inblock {
+	display: inline-block
+}
+.pb-none {
+	display: $none;
+}
+.pb-table {
+	display: table
+}
+.pb-table-tr {
+	display: table-row
+}
+.pb-table-td {
+	display: table-cell
+}
+.pb-fr {
+	float: $posRight
+}
+.pb-fl {
+	float: $posRight
+}
+.pb-fn {
+	float: $none;
+}
+.pb-cr {
+	clear: $posRight;
+}
+.pb-cl {
+	clear: $posLeft;
+}
+.pb-cb {
+	clear: both
+}
+.pb-hr {
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: $hrColor;
+}
+.pb-wauto {
+	width: $auto;
+}
+.pb-w100p {
+	width: $v100p;
+}
+.pb-hauto {
+	height: $auto;
+}
+.pb-h100p {
+	height: $v100p;
+}
+.pb-mh {
+	min-height: $null;
+}
+.pb-mh100p {
+	min-height: $v100p;
+}
+.pb-static {
+	position: static
+}
+.pb-relative {
+	position: relative
+}
+.pb-absolute {
+	position: absolute
+}
+.pb-ofhidden {
+	overflow: hidden
+}
+.pb-ofyauto {
+	overflow-y:$auto;
+}
+.pb-ofxauto {
+	overflow-x:$auto;
+}
+.pb-position {
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+}
+.pb-positionauto {
+	top:auto;
+	right:auto;
+	bottom:auto;
+	left:auto;
+}
+.pb-li-in {
+	list-style-position: inside;
+}
+.pb-li-out {
+	list-style-position: outside;
+}
+.pb-linone {
+	list-style-type: $none;
+}
+.pb-lidecimal {
+	list-style-type: decimal;
+}
+.pb-lidisc {
+	list-style-type: disc;
+}
+.pb-lisquare {
+	list-style-type: square;
+}
+.pb-licircle {
+	list-style-type: circle;
+}
+.pb-ellipsis {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.pb-nowrap {
+	white-space: nowrap;
+	overflow: hidden;
+}
+.pb-radius {
+	-webkit-border-radius:$null;
+	-moz-border-radius:$null;
+	-o-border-radius:$null;
+	border-top-left-radius:$null;
+	border-top-right-radius:$null;
+	border-bottom-left-radius:$null;
+	border-bottom-right-radius:$null;
+}
+.pb-stack {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	vertical-align: middle;
+}
+.pb-mauto {
+   margin: $auto;
+}
+.pb-m {
+   margin: $null;
+}
+.pb-mtb {
+   margin-top: $null;
+   margin-bottom: $null;
+}
+.pb-mlr {
+   margin-left: $null;
+   margin-right: $null;
+}
+.pb-mt {
+   margin-top: $null;
+}
+.pb-mr {
+   margin-right: $null;
+}
+.pb-mb {
+   margin-bottom: $null;
+}
+.pb-ml {
+   margin-left: $null;
+}
+// $direction: top right bottom left;
+// @each $oneDirection in $direction {
+// 	margin-#{$oneDirection}:1;
+// }
+
+// $colors-list: #111 #222 #333 #444 #555;
+// @each $current-color in $colors-list {
+//     $i: index($colors-list, $current-color);
+//     .stuff-#{$i} { 
+//         color: $current-color;
+//     }
+// }
+$propertyCount: 6;
+// $directionPropertyList: 'top' 'right' 'bottom' 'left' 'e';
+
+@for $i from 1 to $propertyCount {
+	// $directionPropertyLis: nth($propertyCount, $i);
+	.pb-m#{$propertyCount}#{$i} {
+		margin: #{$propertyCount}px;
+	}
+	// @for $j from 1 to length($directionPropertyList) {
+	// 		$directionProperty: nth($directionPropertyList, $j);
+	// 		.pb-m#{$directionShort}#{$j} {
+	// 		margin-#{$directionProperty}: #{$j}px;
+	// 	}
+	// }
+
+}
+
+// $directionList: top right bottom left;
+// @each $currentDirection in $directionList {
+//     $i: index($directionList, $currentDirection);
+//     .stuff-#{$i} {
+// 		#{$currentDirection};
+//     }
+// }
+
