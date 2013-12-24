@@ -15,7 +15,7 @@
 
 $types: (m 'margin', p 'padding');
 $directions: (t 'top', r 'right', b 'bottom', l 'left');
-$length: 20;
+$marginRange: 20;
 @each $direction in $directions {
 	
 	$key: nth($direction, 1);
@@ -26,7 +26,7 @@ $length: 20;
 		$keyType: nth($type, 1);
 		$valueType: nth($type, 2);
 
-		@for $i from 0 through $length {
+		@for $i from 0 through $marginRange {
 
 			.pb-#{$keyType}#{$key}#{$i} {
 				#{$valueType}-#{$value}: #{$i}px;
