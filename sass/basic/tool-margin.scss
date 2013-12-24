@@ -1,0 +1,36 @@
+.pb-mauto {
+	margin: $auto;
+}
+.pb-m {
+	margin: $null;
+}
+.pb-mtb {
+	margin-top: $null;
+	margin-bottom: $null;
+}
+.pb-mlr {
+	margin-left: $null;
+	margin-right: $null;
+}
+
+$types: (m 'margin', p 'padding');
+$directions: (t 'top', r 'right', b 'bottom', l 'left');
+$length: 20;
+@each $direction in $directions {
+	
+	$key: nth($direction, 1);
+	$value: nth($direction, 2);
+	
+	@each $type in $types {
+		
+		$keyType: nth($type, 1);
+		$valueType: nth($type, 2);
+
+		@for $i from 0 through $length {
+
+			.pb-#{$keyType}#{$key}#{$i} {
+				#{$valueType}-#{$value}: #{$i}px;
+			}
+		}
+	}
+}

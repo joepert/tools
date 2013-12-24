@@ -1,0 +1,18 @@
+.pb-fr {
+	float: $posRight
+}
+.pb-fl {
+	float: $posRight
+}
+.pb-fn {
+	float: $none;
+}
+.pb-cr {
+	clear: $posRight;
+}
+.pb-cl {
+	clear: $posLeft;
+}
+.pb-cb {
+	clear: both
+}

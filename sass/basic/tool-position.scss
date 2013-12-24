@@ -1,0 +1,30 @@
+.pb-static {
+	position: static
+}
+.pb-relative {
+	position: relative
+}
+.pb-absolute {
+	position: absolute
+}
+.pb-ofhidden {
+	overflow: hidden
+}
+.pb-ofyauto {
+	overflow-y:$auto;
+}
+.pb-ofxauto {
+	overflow-x:$auto;
+}
+.pb-position {
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+}
+.pb-positionauto {
+	top:auto;
+	right:auto;
+	bottom:auto;
+	left:auto;
+}

@@ -1,0 +1,15 @@
+.pb-radius {
+	-webkit-border-radius:$null;
+	-moz-border-radius:$null;
+	-o-border-radius:$null;
+	border-top-left-radius:$null;
+	border-top-right-radius:$null;
+	border-bottom-left-radius:$null;
+	border-bottom-right-radius:$null;
+}
+.pb-stack {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	vertical-align: middle;
+}

@@ -1,0 +1,48 @@
+.pb-lh {
+	line-height: $fontStateNormal;
+}
+.pb-indent {
+	text-indent: $null;
+}
+.pb-bold {
+	font-weight: bold
+}
+.pb-normal {
+	font-weight: $fontStateNormal;
+}
+.pb-italic {
+	font-style: italic
+}
+.pb-uppercase {
+	text-transform: uppercase
+}
+.pb-lowercase {
+	text-transform: lowercase
+}
+.pb-capitalize {
+	text-transform: capitalize
+}
+.pb-decoration {
+	text-decoration: $none;
+}
+.pb-underline {
+	text-decoration: underline
+}
+.pb-letter-space {
+	letter-spacing: $null;
+}
+.pb-hr {
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: $hrColor;
+}
+.pb-ellipsis {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.pb-nowrap {
+	white-space: nowrap;
+	overflow: hidden;
+}
